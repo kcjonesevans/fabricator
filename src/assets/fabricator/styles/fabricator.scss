@@ -4,9 +4,21 @@
  * Class selectors are namespaced with "f-"
  */
 
+ //theme code-colors
+ $theme-colors: (
+ 	primary: #2b811c,
+ 	secondary: #212121,
+
+ 	p-light: #5fb14b,
+ 	p-dark: #005300,
+
+ 	s-light: #484848,
+ 	s-dark: #000
+);
+
 $settings: (
-	theme: light,
-	accent: hsl(0, 0%, 46%),
+	theme: dark,
+	accent: map-get($theme-colors, primary),
 	menu-width: 14rem
 );
 

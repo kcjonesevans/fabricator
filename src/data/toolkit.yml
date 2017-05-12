@@ -1,8 +1,9 @@
 colors:
   primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
+    primary: "#2b811c"
+    p-light: "#5fb14b"
+    p-dark: "#005300"
   secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    secondary: "#212121"
+    s-light: "#484848"
+    s-dark: "#000000"
