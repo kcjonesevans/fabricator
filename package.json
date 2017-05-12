@@ -7,6 +7,7 @@
   "scripts": {
     "prestart": "npm install",
     "build": "npm run prestart && gulp",
+    "build:docs": "copyfiles -f dist/* docs/ && copyfiles -f dist/assets/* docs/assets  && copyfiles -f dist/pages/* docs/pages",
     "start": "gulp --dev",
     "test": "npm run build"
   },
