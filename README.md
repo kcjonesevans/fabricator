@@ -8,6 +8,21 @@ This is a play-ground for testing out fabricator and creating my own pattern lib
 $ npm start
 ```
 
+## Colors
+```
+//theme code-colors
+$theme-colors:{
+	primary: #2b811c,
+	secondary: #212121,
+
+	p-light: #5fb14b,
+	p-dark: #005300,
+
+	s-light: #484848,
+	s-dark: #000
+}```
+
+
 ## Credits
 ### Fabricator
 <p align="center">

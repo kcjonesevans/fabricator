@@ -10,7 +10,10 @@
 
 	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
 
+
+
 	<!-- toolkit styles -->
+	<!-- <link  rel="stylesheet" href="assets/materialize/styles/materialize.css"/> -->
 	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 
@@ -67,10 +70,19 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
+							<a href="components.html#block-quotes">Block Quotes</a>
+						</li>
+						<li>
 							<a href="components.html#button">Button</a>
 						</li>
 						<li>
+							<a href="components.html#buttons">Buttons</a>
+						</li>
+						<li>
 							<a href="components.html#checkbox">Checkbox</a>
+						</li>
+						<li>
+							<a href="components.html#flow-text">Flow Text</a>
 						</li>
 						<li>
 							<a href="components.html#lists">Lists</a>
@@ -98,6 +110,9 @@
 				<li>
 					<a href="structures.html" class="f-menu__heading">Structures</a>
 					<ul>
+						<li>
+							<a href="structures.html#email-form">Email Form</a>
+						</li>
 						<li>
 							<a href="structures.html#form">Form</a>
 						</li>
@@ -141,6 +156,32 @@
 <h1 data-f-toggle="labels">Components</h1>
 
 
+<div class="f-item-group" id="block-quotes">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Block Quotes</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<blockquote>
+	This is an example quotation that uses the blockquote tag.
+</blockquote>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;blockquote&gt;
+	This is an example quotation that uses the blockquote tag.
+&lt;/blockquote&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="button">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -153,12 +194,34 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<button class="button btn-primary">Primary</button>
-<button class="button btn-secondary">Secondary</button>
+	<button class="button btn-primary">Submit</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class&#x3D;&quot;button btn-secondary&quot;&gt;Secondary&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Submit&lt;/button&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="buttons">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Buttons</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<button class="button btn-primary">Submit</button>
+<button class="button btn-secondary">Cancel</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class&#x3D;&quot;button btn-secondary&quot;&gt;Cancel&lt;/button&gt;</code></pre>
 </div>
 
 
@@ -185,6 +248,32 @@
 	<pre><code class="language-markup">&lt;label&gt;
 	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
 &lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="flow-text">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Flow Text</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<p class="flow-text">One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that
+	fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens. To see Flow Text in action, slowly resize your browser and watch the size
+	of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p class&#x3D;&quot;flow-text&quot;&gt;One common flaw we&#x27;ve seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we&#x27;ve created a class that
+	fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens. To see Flow Text in action, slowly resize your browser and watch the size
+	of this text body change! Use the button above to toggle off/on flow-text to see the difference!&lt;/p&gt;</code></pre>
 </div>
 
 
@@ -501,6 +590,7 @@
 
 	<!-- toolkit scripts -->
 	<script src="assets/toolkit/scripts/toolkit.js"></script>
+	<script src="assets/materialize/scripts/materialize.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>

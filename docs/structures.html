@@ -10,7 +10,10 @@
 
 	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
 
+
+
 	<!-- toolkit styles -->
+	<!-- <link  rel="stylesheet" href="assets/materialize/styles/materialize.css"/> -->
 	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 
@@ -67,10 +70,19 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
+							<a href="components.html#block-quotes">Block Quotes</a>
+						</li>
+						<li>
 							<a href="components.html#button">Button</a>
 						</li>
 						<li>
+							<a href="components.html#buttons">Buttons</a>
+						</li>
+						<li>
 							<a href="components.html#checkbox">Checkbox</a>
+						</li>
+						<li>
+							<a href="components.html#flow-text">Flow Text</a>
 						</li>
 						<li>
 							<a href="components.html#lists">Lists</a>
@@ -98,6 +110,9 @@
 				<li>
 					<a href="structures.html" class="f-menu__heading">Structures</a>
 					<ul>
+						<li>
+							<a href="structures.html#email-form">Email Form</a>
+						</li>
 						<li>
 							<a href="structures.html#form">Form</a>
 						</li>
@@ -141,6 +156,70 @@
 <h1 data-f-toggle="labels">Structures</h1>
 
 
+<div class="f-item-group" id="email-form">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Email Form</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="first_name" type="text" class="validate">
+				<label for="first_name">First Name</label>
+			</div>
+			<div class="input-field col s6">
+				<input id="last_name" type="text" class="validate">
+				<label for="last_name">Last Name</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="email" type="email" class="validate">
+				<label for="email">Email</label>
+			</div>
+		</div>
+
+	</form>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;form class&#x3D;&quot;col s12&quot;&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;input-field col s6&quot;&gt;
+				&lt;input id&#x3D;&quot;first_name&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;validate&quot;&gt;
+				&lt;label for&#x3D;&quot;first_name&quot;&gt;First Name&lt;/label&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;input-field col s6&quot;&gt;
+				&lt;input id&#x3D;&quot;last_name&quot; type&#x3D;&quot;text&quot; class&#x3D;&quot;validate&quot;&gt;
+				&lt;label for&#x3D;&quot;last_name&quot;&gt;Last Name&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;input-field col s12&quot;&gt;
+				&lt;input id&#x3D;&quot;email&quot; type&#x3D;&quot;email&quot; class&#x3D;&quot;validate&quot;&gt;
+				&lt;label for&#x3D;&quot;email&quot;&gt;Email&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+	&lt;/form&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -157,16 +236,14 @@
 	<div>
 		<label for="textInput">Text input</label>
 		<input type="text" id="textInput" /> </div>
-	<button class="button btn-primary">Primary</button>
-	<button class="button btn-secondary">Secondary</button></form>
+	<button class="button btn-primary">Submit</button></form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot;&gt;
 	&lt;div&gt;
 		&lt;label for&#x3D;&quot;textInput&quot;&gt;Text input&lt;/label&gt;
 		&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; /&gt; &lt;/div&gt;
-	&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Primary&lt;/button&gt;
-	&lt;button class&#x3D;&quot;button btn-secondary&quot;&gt;Secondary&lt;/button&gt;&lt;/form&gt;</code></pre>
+	&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Submit&lt;/button&gt;&lt;/form&gt;</code></pre>
 </div>
 
 
@@ -180,6 +257,7 @@
 
 	<!-- toolkit scripts -->
 	<script src="assets/toolkit/scripts/toolkit.js"></script>
+	<script src="assets/materialize/scripts/materialize.js"></script>
 	<!-- /toolkit scripts -->
 
 </body>
