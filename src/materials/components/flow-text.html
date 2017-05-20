@@ -1,3 +1,37 @@
-<p class="flow-text">One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens.
 
-To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+
+  <button id="flow-toggle-btn" class="btn-primary waves-effect waves-light btn" onclick="toggleFlowClass()">Click to turn flow on</button>
+  <div id="flow-text-demo" class="card-panel">
+    <p class="">
+      One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that
+      fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens.</p>
+    <p class="">To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+  </div>
+
+  <br>
+
+  <p>To use flow-text on a body of text, simply just add the class <code class=" language-markup">flow-text</code> to a tag, see the code below.</p>
+  <div class="row">
+    <pre class=" language-markup"><code class=" col s12 language-markup">
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flow-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I am Flow Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          </code></pre>
+  </div>
+
+
+<script>
+
+function toggleFlowClass() {
+	let flowTextElem = document.getElementById('flow-text-demo') ;
+  let flowButtonElem = document.getElementById('flow-toggle-btn');
+  let className = flowTextElem.getAttribute("class");
+  if(className=="flow-text") {
+    flowTextElem.className = "";
+    flowButtonElem.value = 'Click to turn flow on';
+  }
+  else{
+    flowTextElem.className = "flow-text";
+    flowButtonElem.value = 'Click to turn flow off';
+  }
+}
+
+</script>
