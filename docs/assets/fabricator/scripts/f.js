@@ -46,7 +46,7 @@
 
 	'use strict';
 	
-	__webpack_require__(1);
+	__webpack_require__(2);
 	
 	/**
 	 * Global `fabricator` object
@@ -356,7 +356,8 @@
 	fabricator.setInitialMenuState().menuToggle().allItemsToggles().singleItemToggle().buildColorChips().setActiveItem().bindCodeAutoSelect();
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports) {
 
 	'use strict';

@@ -7,13 +7,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title></title>
+	<!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- materialize css -->
+	<link  rel="stylesheet" href="assets/materialize/styles/materialize.css"/>
 
 	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
 
 
 
 	<!-- toolkit styles -->
-	<!-- <link  rel="stylesheet" href="assets/materialize/styles/materialize.css"/> -->
+
 	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 
@@ -70,13 +74,16 @@
 					<a href="components.html" class="f-menu__heading">Components</a>
 					<ul>
 						<li>
+							<a href="components.html#badges">Badges</a>
+						</li>
+						<li>
 							<a href="components.html#block-quotes">Block Quotes</a>
 						</li>
 						<li>
-							<a href="components.html#button">Button</a>
+							<a href="components.html#buttons">Buttons</a>
 						</li>
 						<li>
-							<a href="components.html#buttons">Buttons</a>
+							<a href="components.html#cards">Cards</a>
 						</li>
 						<li>
 							<a href="components.html#checkbox">Checkbox</a>
@@ -85,10 +92,10 @@
 							<a href="components.html#flow-text">Flow Text</a>
 						</li>
 						<li>
-							<a href="components.html#lists">Lists</a>
+							<a href="components.html#footer">Footer</a>
 						</li>
 						<li>
-							<a href="components.html#paragraph">Paragraph</a>
+							<a href="components.html#lists">Lists</a>
 						</li>
 						<li>
 							<a href="components.html#radio">Radio</a>
@@ -101,9 +108,6 @@
 						</li>
 						<li>
 							<a href="components.html#text-input">Text Input</a>
-						</li>
-						<li>
-							<a href="components.html#textarea">Textarea</a>
 						</li>
 					</ul>
 				</li>
@@ -156,6 +160,67 @@
 <h1 data-f-toggle="labels">Components</h1>
 
 
+<div class="f-item-group" id="badges">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Badges</h2>
+	</div>
+		<div class="f-item-group" id="badges.collections">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Collections</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="collection">
+	<a href="#!" class="collection-item"><span class="badge">1</span>Things</a>
+	<a href="#!" class="collection-item"><span class="new badge green">4</span>Things</a>
+	<a href="#!" class="collection-item">Things</a>
+	<a href="#!" class="collection-item"><span class="badge">14</span>Things</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;collection&quot;&gt;
+	&lt;a href&#x3D;&quot;#!&quot; class&#x3D;&quot;collection-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;1&lt;/span&gt;Things&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#!&quot; class&#x3D;&quot;collection-item&quot;&gt;&lt;span class&#x3D;&quot;new badge green&quot;&gt;4&lt;/span&gt;Things&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#!&quot; class&#x3D;&quot;collection-item&quot;&gt;Things&lt;/a&gt;
+	&lt;a href&#x3D;&quot;#!&quot; class&#x3D;&quot;collection-item&quot;&gt;&lt;span class&#x3D;&quot;badge&quot;&gt;14&lt;/span&gt;Things&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="badges.colors">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Colors</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<span class="new badge red">4</span>
+<span class="new badge blue">4</span>
+<span class="new badge teal">4</span>
+<span class="new badge green">4</span>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;span class&#x3D;&quot;new badge red&quot;&gt;4&lt;/span&gt;
+&lt;span class&#x3D;&quot;new badge blue&quot;&gt;4&lt;/span&gt;
+&lt;span class&#x3D;&quot;new badge teal&quot;&gt;4&lt;/span&gt;
+&lt;span class&#x3D;&quot;new badge green&quot;&gt;4&lt;/span&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
 <div class="f-item-group" id="block-quotes">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -182,48 +247,416 @@
 </div>
 
 
-<div class="f-item-group" id="button">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Button</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-preview">
-	<button class="button btn-primary">Submit</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Submit&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="buttons">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Buttons</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-preview">
-	<button class="button btn-primary">Submit</button>
-<button class="button btn-secondary">Cancel</button>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+	</div>
+		<div class="f-item-group" id="buttons.disabled">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Disabled</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<a class="btn-large disabled">Button</a>
+<a class="btn disabled">Button</a>
+<a class="btn-flat disabled">Button</a>
+<a class="btn-floating disabled"><i class="material-icons">add</i></a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class&#x3D;&quot;button btn-primary&quot;&gt;Submit&lt;/button&gt;
-&lt;button class&#x3D;&quot;button btn-secondary&quot;&gt;Cancel&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;a class&#x3D;&quot;btn-large disabled&quot;&gt;Button&lt;/a&gt;
+&lt;a class&#x3D;&quot;btn disabled&quot;&gt;Button&lt;/a&gt;
+&lt;a class&#x3D;&quot;btn-flat disabled&quot;&gt;Button&lt;/a&gt;
+&lt;a class&#x3D;&quot;btn-floating disabled&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/a&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="buttons.flat">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Flat</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<a class="waves-effect waves-teal btn-flat">Button</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a class&#x3D;&quot;waves-effect waves-teal btn-flat&quot;&gt;Button&lt;/a&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.floating">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Floating</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<a class="btn-floating waves-effect waves-light"><i class="material-icons">add</i></a>
+<a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a class&#x3D;&quot;btn-floating waves-effect waves-light&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/a&gt;
+&lt;a class&#x3D;&quot;btn-floating btn-large waves-effect waves-light&quot;&gt;&lt;i class&#x3D;&quot;material-icons&quot;&gt;add&lt;/i&gt;&lt;/a&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.icon-buttons">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Icon Buttons</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<button class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</button>
+<button class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;waves-effect waves-light btn&quot;&gt;&lt;i class&#x3D;&quot;material-icons left&quot;&gt;cloud&lt;/i&gt;button&lt;/button&gt;
+&lt;button class&#x3D;&quot;waves-effect waves-light btn&quot;&gt;&lt;i class&#x3D;&quot;material-icons right&quot;&gt;cloud&lt;/i&gt;button&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.large">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Large</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<a class="waves-effect waves-light btn-large">Button</a>
+<a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+<a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a class&#x3D;&quot;waves-effect waves-light btn-large&quot;&gt;Button&lt;/a&gt;
+&lt;a class&#x3D;&quot;waves-effect waves-light btn-large&quot;&gt;&lt;i class&#x3D;&quot;material-icons left&quot;&gt;cloud&lt;/i&gt;button&lt;/a&gt;
+&lt;a class&#x3D;&quot;waves-effect waves-light btn-large&quot;&gt;&lt;i class&#x3D;&quot;material-icons right&quot;&gt;cloud&lt;/i&gt;button&lt;/a&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.raised">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Raised</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<button class="btn">Submit</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;btn&quot;&gt;Submit&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="buttons.submit">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Submit</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<button class="waves-effect waves-light btn" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;button class&#x3D;&quot;waves-effect waves-light btn&quot; type&#x3D;&quot;submit&quot; name&#x3D;&quot;action&quot;&gt;Submit
+    &lt;i class&#x3D;&quot;material-icons right&quot;&gt;send&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="cards">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Cards</h2>
+	</div>
+		<div class="f-item-group" id="cards.basic">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Basic</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<div class="col s12 m6">
+		<div class="card grey lighten-4">
+			<div class="card-content black-text">
+				<span class="card-title">Card Title</span>
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+			</div>
+			<div class="card-action">
+				<a href="#">This is a link</a>
+				<a href="#">This is a link</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col s12 m6&quot;&gt;
+		&lt;div class&#x3D;&quot;card grey lighten-4&quot;&gt;
+			&lt;div class&#x3D;&quot;card-content black-text&quot;&gt;
+				&lt;span class&#x3D;&quot;card-title&quot;&gt;Card Title&lt;/span&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-action&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="cards.image">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Image</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<div class="col s12 m7">
+		<div class="card medium">
+			<div class="card-image">
+				<img src="assets/toolkit/images/sample-1.jpg">
+				<span class="card-title">Card Title</span>
+			</div>
+			<div class="card-content">
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+			</div>
+			<div class="card-action">
+				<a href="#">This is a link</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col s12 m7&quot;&gt;
+		&lt;div class&#x3D;&quot;card medium&quot;&gt;
+			&lt;div class&#x3D;&quot;card-image&quot;&gt;
+				&lt;img src&#x3D;&quot;assets/toolkit/images/sample-1.jpg&quot;&gt;
+				&lt;span class&#x3D;&quot;card-title&quot;&gt;Card Title&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-content&quot;&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-action&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="cards.size">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Size</h3>
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div><div class="f-item-preview">
+	<div class="row">
+	<h4 class="light">Small</h4>
+	<div class="col s12 m6 l4">
+
+		<div class="card small">
+			<div class="card-image">
+				<img src="assets/toolkit/images/sample-1.jpg">
+				<span class="card-title">Card Title</span>
+			</div>
+			<div class="card-content">
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+			</div>
+			<div class="card-action">
+				<a href="#">This is a link</a>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 m6 l4">
+
+		<div class="card small">
+			<div class="card-image">
+				<img src="assets/toolkit/images/sample-1.jpg">
+				<span class="card-title">Card Title</span>
+			</div>
+			<div class="card-content">
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+			</div>
+			<div class="card-action">
+				<a href="#">This is a link</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="row">
+	<div class="col s12 m7">
+		<h4 class="light">Medium</h4>
+		<div class="card medium">
+			<div class="card-image">
+				<img src="assets/toolkit/images/sample-1.jpg">
+				<span class="card-title">Card Title</span>
+			</div>
+			<div class="card-content">
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+			</div>
+			<div class="card-action">
+				<a href="#">This is a link</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="row">
+	<div class="col s12 m7">
+		<h4 class="light">Large</h4>
+		<div class="card large">
+			<div class="card-image">
+				<img src="assets/toolkit/images/sample-1.jpg">
+				<span class="card-title">Card Title</span>
+			</div>
+			<div class="card-content">
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+				<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+			</div>
+			<div class="card-action">
+				<a href="#">This is a link</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;h4 class&#x3D;&quot;light&quot;&gt;Small&lt;/h4&gt;
+	&lt;div class&#x3D;&quot;col s12 m6 l4&quot;&gt;
+
+		&lt;div class&#x3D;&quot;card small&quot;&gt;
+			&lt;div class&#x3D;&quot;card-image&quot;&gt;
+				&lt;img src&#x3D;&quot;assets/toolkit/images/sample-1.jpg&quot;&gt;
+				&lt;span class&#x3D;&quot;card-title&quot;&gt;Card Title&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-content&quot;&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-action&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col s12 m6 l4&quot;&gt;
+
+		&lt;div class&#x3D;&quot;card small&quot;&gt;
+			&lt;div class&#x3D;&quot;card-image&quot;&gt;
+				&lt;img src&#x3D;&quot;assets/toolkit/images/sample-1.jpg&quot;&gt;
+				&lt;span class&#x3D;&quot;card-title&quot;&gt;Card Title&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-content&quot;&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-action&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col s12 m7&quot;&gt;
+		&lt;h4 class&#x3D;&quot;light&quot;&gt;Medium&lt;/h4&gt;
+		&lt;div class&#x3D;&quot;card medium&quot;&gt;
+			&lt;div class&#x3D;&quot;card-image&quot;&gt;
+				&lt;img src&#x3D;&quot;assets/toolkit/images/sample-1.jpg&quot;&gt;
+				&lt;span class&#x3D;&quot;card-title&quot;&gt;Card Title&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-content&quot;&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-action&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col s12 m7&quot;&gt;
+		&lt;h4 class&#x3D;&quot;light&quot;&gt;Large&lt;/h4&gt;
+		&lt;div class&#x3D;&quot;card large&quot;&gt;
+			&lt;div class&#x3D;&quot;card-image&quot;&gt;
+				&lt;img src&#x3D;&quot;assets/toolkit/images/sample-1.jpg&quot;&gt;
+				&lt;span class&#x3D;&quot;card-title&quot;&gt;Card Title&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-content&quot;&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+				&lt;p&gt;I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;card-action&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;This is a link&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -240,14 +673,60 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<label>
-	<input type="checkbox" /> Checkbox
-</label>
+	<form action="#">
+	<p>
+		<input type="checkbox" id="test5" />
+		<label for="test5">Red</label>
+	</p>
+	<p>
+		<input type="checkbox" id="test6" checked="checked" />
+		<label for="test6">Yellow</label>
+	</p>
+	<p>
+		<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+		<label for="filled-in-box">Filled in</label>
+	</p>
+	<p>
+		<input type="checkbox" id="indeterminate-checkbox" />
+		<label for="indeterminate-checkbox">Indeterminate Style</label>
+	</p>
+	<p>
+		<input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+		<label for="test7">Green</label>
+	</p>
+	<p>
+		<input type="checkbox" id="test8" disabled="disabled" />
+		<label for="test8">Brown</label>
+	</p>
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;form action&#x3D;&quot;#&quot;&gt;
+	&lt;p&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;test5&quot; /&gt;
+		&lt;label for&#x3D;&quot;test5&quot;&gt;Red&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;test6&quot; checked&#x3D;&quot;checked&quot; /&gt;
+		&lt;label for&#x3D;&quot;test6&quot;&gt;Yellow&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;filled-in&quot; id&#x3D;&quot;filled-in-box&quot; checked&#x3D;&quot;checked&quot; /&gt;
+		&lt;label for&#x3D;&quot;filled-in-box&quot;&gt;Filled in&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;indeterminate-checkbox&quot; /&gt;
+		&lt;label for&#x3D;&quot;indeterminate-checkbox&quot;&gt;Indeterminate Style&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;test7&quot; checked&#x3D;&quot;checked&quot; disabled&#x3D;&quot;disabled&quot; /&gt;
+		&lt;label for&#x3D;&quot;test7&quot;&gt;Green&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;test8&quot; disabled&#x3D;&quot;disabled&quot; /&gt;
+		&lt;label for&#x3D;&quot;test8&quot;&gt;Brown&lt;/label&gt;
+	&lt;/p&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
 
@@ -266,14 +745,146 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<p class="flow-text">One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that
-	fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens. To see Flow Text in action, slowly resize your browser and watch the size
-	of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+	<button id="flow-toggle-btn" class="btn-primary waves-effect waves-light btn" onclick="toggleFlowClass()">Click to turn flow on</button>
+<div id="flow-text-demo" class="card-panel">
+	<p class="">
+		One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that
+		fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens.</p>
+	<p class="">To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!</p>
+</div>
+
+<br>
+
+<p>To use flow-text on a body of text, simply just add the class <code class=" language-markup">flow-text</code> to a tag, see the code below.</p>
+<div class="row">
+	<pre class=" language-markup"><code class=" col s12 language-markup">
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flow-text<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>I am Flow Text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+          </code></pre>
+</div>
+
+
+<script>
+	function toggleFlowClass() {
+		let flowTextElem = document.getElementById('flow-text-demo');
+		let flowButtonElem = document.getElementById('flow-toggle-btn');
+		let className = flowTextElem.getAttribute("class");
+		if (className == "flow-text") {
+			flowTextElem.className = "";
+			flowButtonElem.value = 'Click to turn flow on';
+		} else {
+			flowTextElem.className = "flow-text";
+			flowButtonElem.value = 'Click to turn flow off';
+		}
+	}
+</script>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p class&#x3D;&quot;flow-text&quot;&gt;One common flaw we&#x27;ve seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we&#x27;ve created a class that
-	fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens. To see Flow Text in action, slowly resize your browser and watch the size
-	of this text body change! Use the button above to toggle off/on flow-text to see the difference!&lt;/p&gt;</code></pre>
+	<pre><code class="language-markup">&lt;button id&#x3D;&quot;flow-toggle-btn&quot; class&#x3D;&quot;btn-primary waves-effect waves-light btn&quot; onclick&#x3D;&quot;toggleFlowClass()&quot;&gt;Click to turn flow on&lt;/button&gt;
+&lt;div id&#x3D;&quot;flow-text-demo&quot; class&#x3D;&quot;card-panel&quot;&gt;
+	&lt;p class&#x3D;&quot;&quot;&gt;
+		One common flaw we&#x27;ve seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we&#x27;ve created a class that
+		fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens.&lt;/p&gt;
+	&lt;p class&#x3D;&quot;&quot;&gt;To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+
+&lt;p&gt;To use flow-text on a body of text, simply just add the class &lt;code class&#x3D;&quot; language-markup&quot;&gt;flow-text&lt;/code&gt; to a tag, see the code below.&lt;/p&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;pre class&#x3D;&quot; language-markup&quot;&gt;&lt;code class&#x3D;&quot; col s12 language-markup&quot;&gt;
+    &lt;span class&#x3D;&quot;token tag&quot;&gt;&lt;span class&#x3D;&quot;token tag&quot;&gt;&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt; &lt;span class&#x3D;&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class&#x3D;&quot;token attr-value&quot;&gt;&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&#x3D;&lt;/span&gt;&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;flow-text&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;I am Flow Text&lt;span class&#x3D;&quot;token tag&quot;&gt;&lt;span class&#x3D;&quot;token tag&quot;&gt;&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class&#x3D;&quot;token punctuation&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;
+          &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;script&gt;
+	function toggleFlowClass() {
+		let flowTextElem &#x3D; document.getElementById(&#x27;flow-text-demo&#x27;);
+		let flowButtonElem &#x3D; document.getElementById(&#x27;flow-toggle-btn&#x27;);
+		let className &#x3D; flowTextElem.getAttribute(&quot;class&quot;);
+		if (className &#x3D;&#x3D; &quot;flow-text&quot;) {
+			flowTextElem.className &#x3D; &quot;&quot;;
+			flowButtonElem.value &#x3D; &#x27;Click to turn flow on&#x27;;
+		} else {
+			flowTextElem.className &#x3D; &quot;flow-text&quot;;
+			flowButtonElem.value &#x3D; &#x27;Click to turn flow off&#x27;;
+		}
+	}
+&lt;/script&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="footer">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Footer</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<footer class="page-footer">
+
+
+	<div class="container ">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Footer Content</h5>
+				<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<h5 class="white-text">Links</h5>
+				<ul>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+					<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			© 2017 Copyright Text
+			<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+		</div>
+	</div>
+</footer>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;footer class&#x3D;&quot;page-footer&quot;&gt;
+
+
+	&lt;div class&#x3D;&quot;container &quot;&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col l6 s12&quot;&gt;
+				&lt;h5 class&#x3D;&quot;white-text&quot;&gt;Footer Content&lt;/h5&gt;
+				&lt;p class&#x3D;&quot;grey-text text-lighten-4&quot;&gt;You can use rows and columns here to organize your footer content.&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;col l4 offset-l2 s12&quot;&gt;
+				&lt;h5 class&#x3D;&quot;white-text&quot;&gt;Links&lt;/h5&gt;
+				&lt;ul&gt;
+					&lt;li&gt;&lt;a class&#x3D;&quot;grey-text text-lighten-3&quot; href&#x3D;&quot;#!&quot;&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a class&#x3D;&quot;grey-text text-lighten-3&quot; href&#x3D;&quot;#!&quot;&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a class&#x3D;&quot;grey-text text-lighten-3&quot; href&#x3D;&quot;#!&quot;&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a class&#x3D;&quot;grey-text text-lighten-3&quot; href&#x3D;&quot;#!&quot;&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;footer-copyright&quot;&gt;
+		&lt;div class&#x3D;&quot;container&quot;&gt;
+			© 2017 Copyright Text
+			&lt;a class&#x3D;&quot;grey-text text-lighten-4 right&quot; href&#x3D;&quot;#!&quot;&gt;More Links&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
 </div>
 
 
@@ -341,30 +952,6 @@
 </div>
 
 
-<div class="f-item-group" id="paragraph">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Paragraph</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-preview">
-	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="radio">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -377,30 +964,44 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<label>
-	<input type="radio" name="groupName" id="radio1" /> Radio 1
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio2" /> Radio 2
-</label>
-
-<label>
-	<input type="radio" name="groupName" id="radio3" /> Radio 3
-</label>
+	<form action="#">
+	<p>
+		<input name="group1" type="radio" id="test1" />
+		<label for="test1">Red</label>
+	</p>
+	<p>
+		<input name="group1" type="radio" id="test2" />
+		<label for="test2">Yellow</label>
+	</p>
+	<p>
+		<input class="with-gap" name="group1" type="radio" id="test3" />
+		<label for="test3">Green</label>
+	</p>
+	<p>
+		<input name="group1" type="radio" id="test4" disabled="disabled" />
+		<label for="test4">Brown</label>
+	</p>
+</form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio1&quot; /&gt; Radio 1
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio2&quot; /&gt; Radio 2
-&lt;/label&gt;
-
-&lt;label&gt;
-	&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;groupName&quot; id&#x3D;&quot;radio3&quot; /&gt; Radio 3
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;form action&#x3D;&quot;#&quot;&gt;
+	&lt;p&gt;
+		&lt;input name&#x3D;&quot;group1&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;test1&quot; /&gt;
+		&lt;label for&#x3D;&quot;test1&quot;&gt;Red&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input name&#x3D;&quot;group1&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;test2&quot; /&gt;
+		&lt;label for&#x3D;&quot;test2&quot;&gt;Yellow&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input class&#x3D;&quot;with-gap&quot; name&#x3D;&quot;group1&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;test3&quot; /&gt;
+		&lt;label for&#x3D;&quot;test3&quot;&gt;Green&lt;/label&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;input name&#x3D;&quot;group1&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;test4&quot; disabled&#x3D;&quot;disabled&quot; /&gt;
+		&lt;label for&#x3D;&quot;test4&quot;&gt;Brown&lt;/label&gt;
+	&lt;/p&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
 
@@ -419,22 +1020,40 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<select name="" id="">
-	<option value="">Option 1</option>
-	<option value="">Option 2</option>
-	<option value="">Option 3</option>
-	<option value="">Option 4</option>
-	<option value="">Option 5</option>
-</select>
+	<div class="input-field col s12">
+	<select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+	<label>Materialize Select</label>
+</div>
+
+
+<script>
+	$(document).ready(function() {
+		$('select').material_select();
+	});
+</script>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-&lt;/select&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;input-field col s12&quot;&gt;
+	&lt;select&gt;
+      &lt;option value&#x3D;&quot;&quot; disabled selected&gt;Choose your option&lt;/option&gt;
+      &lt;option value&#x3D;&quot;1&quot;&gt;Option 1&lt;/option&gt;
+      &lt;option value&#x3D;&quot;2&quot;&gt;Option 2&lt;/option&gt;
+      &lt;option value&#x3D;&quot;3&quot;&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+	&lt;label&gt;Materialize Select&lt;/label&gt;
+&lt;/div&gt;
+
+
+&lt;script&gt;
+	$(document).ready(function() {
+		$(&#x27;select&#x27;).material_select();
+	});
+&lt;/script&gt;</code></pre>
 </div>
 
 
@@ -549,34 +1168,40 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<label for="textInput">Text input</label>
-<input type="text" id="textInput" />
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label for&#x3D;&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; /&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="textarea">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Textarea</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
+	<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="input_text" type="text" data-length="10">
+				<label for="input_text">Input text</label>
+			</div>
 		</div>
-	</div><div class="f-item-preview">
-	<textarea name="" id="" cols="30" rows="10"></textarea>
+		<div class="row">
+			<div class="input-field col s12">
+				<textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+				<label for="textarea1">Textarea</label>
+			</div>
+		</div>
+	</form>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;textarea name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;form class&#x3D;&quot;col s12&quot;&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;input-field col s6&quot;&gt;
+				&lt;input id&#x3D;&quot;input_text&quot; type&#x3D;&quot;text&quot; data-length&#x3D;&quot;10&quot;&gt;
+				&lt;label for&#x3D;&quot;input_text&quot;&gt;Input text&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;input-field col s12&quot;&gt;
+				&lt;textarea id&#x3D;&quot;textarea1&quot; class&#x3D;&quot;materialize-textarea&quot; data-length&#x3D;&quot;120&quot;&gt;&lt;/textarea&gt;
+				&lt;label for&#x3D;&quot;textarea1&quot;&gt;Textarea&lt;/label&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -588,10 +1213,16 @@
 		</div>
 	<script src="assets/fabricator/scripts/f.js"></script>
 
+
 	<!-- toolkit scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="assets/toolkit/scripts/toolkit.js"></script>
-	<script src="assets/materialize/scripts/materialize.js"></script>
+	<script src="assets/materialize/js/materialize.js"></script>
 	<!-- /toolkit scripts -->
 
+
+
 </body>
+
+
 </html>
