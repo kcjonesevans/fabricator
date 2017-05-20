@@ -29,6 +29,11 @@ const config = {
       dest: 'docs/assets/toolkit/styles',
       watch: 'src/assets/toolkit/styles/**/*.scss',
     },
+    materialize: {
+      src: 'src/assets/materialize/sass/materialize.scss',
+      dest: 'docs/assets/materialize/styles',
+      watch: 'src/assets/materialize/sass/**/*.scss',
+    },
   },
   scripts: {
     fabricator: {
@@ -40,6 +45,11 @@ const config = {
       src: './src/assets/toolkit/scripts/toolkit.js',
       dest: 'docs/assets/toolkit/scripts',
       watch: 'src/assets/toolkit/scripts/**/*',
+    },
+    materialize: {
+      src: './src/assets/materialize/js/bin/materialize.js',
+      dest: 'docs/assets/materialize/scripts',
+      watch: 'src/assets/materialize/js/**/*',
     },
   },
   images: {
@@ -85,8 +95,20 @@ gulp.task('styles:toolkit', () => {
   .pipe(gulp.dest(config.styles.toolkit.dest))
   .pipe(gulpif(config.dev, reload({ stream: true })));
 });
+gulp.task('styles:materialize', () => {
+  gulp.src(config.styles.materialize.src)
+  .pipe(gulpif(config.dev, sourcemaps.init()))
+  .pipe(sass({
+    includePaths: './node_modules',
+  }).on('error', sass.logError))
+  .pipe(prefix('last 1 version'))
+  .pipe(gulpif(!config.dev, csso()))
+  .pipe(gulpif(config.dev, sourcemaps.write()))
+  .pipe(gulp.dest(config.styles.materialize.dest))
+  .pipe(gulpif(config.dev, reload({ stream: true })));
+});
 
-gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
+gulp.task('styles', ['styles:fabricator', 'styles:toolkit', 'styles:materialize']);
 
 
 // scripts
@@ -146,7 +168,7 @@ gulp.task('serve', () => {
   gulp.watch(config.templates.watch, ['assembler:watch']);
 
   gulp.task('styles:watch', ['styles']);
-  gulp.watch([config.styles.fabricator.watch, config.styles.toolkit.watch], ['styles:watch']);
+  gulp.watch([config.styles.fabricator.watch, config.styles.toolkit.watch, config.styles.materialize.watch], ['styles:watch']);
 
   gulp.task('scripts:watch', ['scripts'], browserSync.reload);
   gulp.watch([config.scripts.fabricator.watch, config.scripts.toolkit.watch], ['scripts:watch']);
