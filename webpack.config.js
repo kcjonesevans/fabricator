@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 
-
 /**
  * Define plugins based on environment
  * @param {boolean} isDev If in development mode
@@ -59,7 +58,8 @@ module.exports = (config) => {
   return {
     entry: {
       'fabricator/scripts/f': config.scripts.fabricator.src,
-      'toolkit/scripts/toolkit': config.scripts.toolkit.src
+      'toolkit/scripts/toolkit': config.scripts.toolkit.src,
+      'materialize/js/materialize': config.scripts.materialize.src
     },
     output: {
       path: path.resolve(__dirname, config.dest, 'assets'),
